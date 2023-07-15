@@ -1,0 +1,166 @@
+*{
+  margin:0;
+  padding:0;
+}
+body{
+  font-family :sans-serif;
+  line-height: 1.4;
+}
+
+
+.price{
+  font-size:20px;
+}
+
+
+
+.add-cart{
+  width: 100%;
+}
+
+.product{
+  width: 825px;
+  margin: 50px auto;
+  border: 4px solid black;
+
+  position: relative;
+}
+.product::after{
+  content:"after";
+  background-color: orange;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  padding: 5px 25px;
+  display: inline-block;
+
+  position: absolute;
+  top: -20px;
+  right: -50px;
+}
+
+.sale-sticker{
+  background-color: orangered;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 2px;
+
+  display: inline-block;
+  padding: 5px 25px;
+
+  /* width: 50px;
+  text-align: center; */
+  position: absolute;
+  top: -20px;
+  left: -50px;
+}
+
+.product-title{
+  background-color: #f7f7f7;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 10px 0;
+}
+
+.shipping{
+  font-weight: bold;
+  color: #444;
+}
+
+.text{
+  line-height:1.3;
+  margin-bottom: 5px;
+}
+
+.more-info:link, .more-info:visited{
+  color:black;
+  /* margin-bottom:20px;
+  display: inline-block; */
+}
+.more-info:hover, .more-info:active{
+  text-decoration: none;
+}
+
+/* COLOR TABLE */
+
+.color-boxes{
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+.color-box{
+  width: 20px;
+  height: 20px;
+  background-color: gray;
+}
+.color-box:first-child{
+  background-color: black;
+}
+.color-box:nth-child(2){
+  background-color: rgb(0, 81, 255);
+}
+.color-box:nth-child(3){
+  background-color: orangered;
+}
+.color-box:nth-child(4){
+  background-color: rgb(255, 213, 0);
+}
+.color-box:nth-child(5){
+  background-color: yellowgreen;
+}
+.color-box:last-child{
+  background-color: rgb(165, 85, 42);
+}
+
+/* PRODUCT DETAILS*/
+.details-title{
+  text-transform: uppercase;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.details-list{
+  margin-left: 25px;
+  list-style: square;
+  line-height: 1.8;
+}
+
+/* BUTTON */
+.add-cart{
+  font-size: 20px;
+  border: none;
+  background-color: black;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 20px 0;
+}
+.add-cart:hover{
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  border-top: 3px solid black;
+}
+
+/* GRID */
+.product{
+  display: grid;
+  grid-template-columns: 250px 1fr 1fr;
+  grid-template-rows: 1fr 250px 1fr;
+  column-gap:40px;
+
+  align-items:center;
+}
+img{
+  width: 250px;
+  height: auto;
+}
+.main{
+}
+.product-title{
+  grid-column: 1/-1;
+  grid-row: 1;
+}
+.add-cart{
+  grid-column: 1/-1;
+}
