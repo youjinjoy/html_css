@@ -70,6 +70,8 @@ html {
   /* Percentage of user's browser font-size setting */
   font-size: 62.5%;
   overflow-x: hidden;
+  /* scroll-behavior: smooth; */
+  /* 강의 당시 사파리나 iOS에서는 안됐기 때문에 scroll-behavior 대신 js에서 직접 설정해줄 것임 */
 }
 
 body {
